@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CPV-RPS-Multiplayer</title>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="well well-lg">Rock Paper Scissors</div>
+        <div class="row">
+            <div class="col-xs-offset-3 col-xs-6">
+                <form id="target">
+                    <input type="text" id="user" placeholder="Enter Name">
+                    <input type="submit" id="submit-btn" value="Submit">
+            </div id="render-name">
+        </div>
+        </form>
+        <!-- Create a text field in place of the Form after player enters name -->
+    </div>
+    </div>
+    <div class="row">
+        <div id="main-section">
+            <div class="col-xs-4">
+                <div class="panel panel-default">
+                    <div class="panel-body id=right-section">
+                        <h3 id="player-one-text">Waiting for Player 1</h3>
+                        <div id="p1-name-text"></div>
+                        <div id="p1-rock-text"></div>
+                        <div id="p1-paper-text"></div>
+                        <div id="p1-scissor-text"></div>
+                        <div id="p1-wins-text"></div>
+                        <div id="p1-loses-text"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div id="disconnect-text"></div>
+                        <div id="player-one-choice"></div>
+                        <div id="player-two-choice"></div>
+                        <div id="winner"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="panel panel-default">
+                    <div class="panel-body id=left-section">
+                        <h3 id="player-two-text">Waiting for Player 2</h3>
+                        <div id="p2-name-text"></div>
+                        <div id="p2-rock-text"></div>
+                        <div id="p2-paper-text"></div>
+                        <div id="p2-scissor-text"></div>
+                        <div id="p2-wins-text"></div>
+                        <div id="p2-loses-text"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-offset-2 col-xs-8 col-xs-offset-2">
+                <div id="chatbox">
+                </div>
+            </div>
+            <div class="col-xs-offset-2 col-xs-8">
+                <div class="input-group">
+                    <span class="input-group-addon">Comment</span>
+                    <input id="message" type="text" class="form-control" name="message" placeholder="Message here...">
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <button type="submit" class="btn btn-default" id="chat-btn">Submit</button>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/javascript/logic.js"></script>
+</body>
+
+</html>
